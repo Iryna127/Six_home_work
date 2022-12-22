@@ -1,12 +1,8 @@
 //First
-const mainArray = [];
-function newArray() {
-  for (let i = 0; i < 15; i++) {
-    mainArray.push(Math.floor(Math.random() * 20));
-  }
-  return mainArray;
-}
-newArray();
+
+const generatearray = () =>
+  [... Array(15)].map(() => Math.round(Math.random() * 20));
+const mainArray = generatearray();
 console.log(mainArray);
 
 //Second
